@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="36">
+      <Unit0>
+        <Filename Value="compas.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="9"/>
+        <CursorPos X="21" Y="19"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uConstants.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="10" Y="15"/>
+        <UsageCount Value="57"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uUtils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="4"/>
+        <CursorPos X="7" Y="21"/>
+        <UsageCount Value="56"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="uFen.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="20" Y="7"/>
+        <UsageCount Value="56"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="uSquare.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="118"/>
+        <CursorPos X="42" Y="136"/>
+        <UsageCount Value="56"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="uPiece.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="14"/>
+        <CursorPos X="12" Y="33"/>
+        <UsageCount Value="56"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="uBitboard.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="25" Y="4"/>
+        <UsageCount Value="56"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="uBoard.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="33" Y="18"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="uRights.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="3" Y="14"/>
+        <UsageCount Value="48"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="uUci.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="10" Y="9"/>
+        <UsageCount Value="47"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="uMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="57" Y="7"/>
+        <UsageCount Value="38"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="uColor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="7"/>
+        <CursorPos X="28" Y="25"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="uValue.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="15"/>
+        <CursorPos Y="8"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="uPieceplacement.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="23"/>
+        <CursorPos X="16" Y="55"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-base/src/custapp.pp"/>
+        <UnitName Value="CustApp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="79"/>
+        <CursorPos X="3" Y="93"/>
+        <UsageCount Value="7"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uPiece.pas"/>
+        <EditorIndex Value="11"/>
+        <CursorPos X="27" Y="14"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uBook.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="97"/>
+        <CursorPos X="13" Y="11"/>
+        <UsageCount Value="7"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uSquare.pas"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="62"/>
+        <CursorPos X="42" Y="201"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uFen.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="94"/>
+        <CursorPos X="28" Y="29"/>
+        <UsageCount Value="7"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uZobrist.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="19" Y="12"/>
+        <UsageCount Value="7"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uNotation.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="27" Y="17"/>
+        <UsageCount Value="7"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uSearchDef.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="39" Y="72"/>
+        <UsageCount Value="7"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uUtil.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="282"/>
+        <CursorPos X="29" Y="85"/>
+        <UsageCount Value="12"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uTest.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="9" Y="15"/>
+        <UsageCount Value="7"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uBoard.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="145"/>
+        <CursorPos X="61" Y="7"/>
+        <UsageCount Value="12"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uSystem.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="217"/>
+        <CursorPos X="27" Y="11"/>
+        <UsageCount Value="7"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uBitbase.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43" Y="9"/>
+        <UsageCount Value="7"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uMove.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="217"/>
+        <CursorPos X="23" Y="225"/>
+        <UsageCount Value="12"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uTranstab.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="253"/>
+        <UsageCount Value="12"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uBitboard.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="51" Y="11"/>
+        <UsageCount Value="12"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="../chess/engines/OpenCritter_1.1.37/source/uMagic.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="79"/>
+        <CursorPos Y="87"/>
+        <UsageCount Value="12"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="../rkchesstools.pas"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="567"/>
+        <CursorPos Y="592"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/inc/systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1225"/>
+        <CursorPos X="16" Y="1247"/>
+        <UsageCount Value="8"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/inc/text.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="255"/>
+        <CursorPos X="6" Y="247"/>
+        <UsageCount Value="8"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/objpas/sysutils/sysstrh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="10" Y="113"/>
+        <UsageCount Value="8"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/objpas/sysutils/sysstr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="796"/>
+        <CursorPos Y="803"/>
+        <UsageCount Value="8"/>
+      </Unit35>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="uValue.pas"/>
+        <Caret Line="12"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uBoard.pas"/>
+        <Caret Line="11" Column="21"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="8" Column="17"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="36" Column="22" TopLine="27"/>
+      </Position4>
+      <Position5>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="44" Column="39" TopLine="30"/>
+      </Position5>
+      <Position6>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="8" Column="12"/>
+      </Position6>
+      <Position7>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="36" TopLine="14"/>
+      </Position7>
+      <Position8>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="32" Column="19" TopLine="21"/>
+      </Position8>
+      <Position9>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="36" TopLine="14"/>
+      </Position9>
+      <Position10>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="60" Column="18" TopLine="52"/>
+      </Position10>
+      <Position11>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="52" Column="24" TopLine="40"/>
+      </Position11>
+      <Position12>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="61" Column="18" TopLine="24"/>
+      </Position12>
+      <Position13>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="12" Column="29"/>
+      </Position13>
+      <Position14>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Line="8" Column="11"/>
+      </Position14>
+      <Position15>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="100" Column="31" TopLine="78"/>
+      </Position15>
+      <Position16>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="80" Column="21" TopLine="76"/>
+      </Position16>
+      <Position17>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Column="21"/>
+      </Position17>
+      <Position18>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Line="4" Column="20"/>
+      </Position18>
+      <Position19>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Line="8"/>
+      </Position19>
+      <Position20>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Line="7" Column="6"/>
+      </Position20>
+      <Position21>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Line="20" Column="12" TopLine="9"/>
+      </Position21>
+      <Position22>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Line="7" Column="21"/>
+      </Position22>
+      <Position23>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Line="25" Column="36" TopLine="10"/>
+      </Position23>
+      <Position24>
+        <Filename Value="uPieceplacement.pas"/>
+        <Caret Line="16" Column="56" TopLine="3"/>
+      </Position24>
+      <Position25>
+        <Filename Value="../rkchesstools.pas"/>
+        <Caret Line="364" Column="33" TopLine="276"/>
+      </Position25>
+      <Position26>
+        <Filename Value="../rkchesstools.pas"/>
+      </Position26>
+      <Position27>
+        <Filename Value="../rkchesstools.pas"/>
+        <Caret Line="56" Column="21" TopLine="34"/>
+      </Position27>
+      <Position28>
+        <Filename Value="../rkchesstools.pas"/>
+        <Caret Line="100" Column="61" TopLine="80"/>
+      </Position28>
+      <Position29>
+        <Filename Value="../rkchesstools.pas"/>
+        <Caret Line="472" Column="9" TopLine="450"/>
+      </Position29>
+      <Position30>
+        <Filename Value="uFen.pas"/>
+        <Caret Line="113" Column="20" TopLine="107"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

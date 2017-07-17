@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1449313866"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq &quot;-Fi/home/ray/Development/3-LAZARUS PROJECTS/19-testproject/compas/lib/x86_64-linux&quot; &quot;-Fu/home/ray/Development/3-LAZARUS PROJECTS/19-testproject/compas/&quot; &quot;-FU/home/ray/Development/3-LAZARUS PROJECTS/19-testproject/compas/lib/x86_64-linux/&quot; -FE/tmp/ compas.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>
