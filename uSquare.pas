@@ -4,10 +4,11 @@ unit uSquare;
 
 interface
 
+uses uvalue;
 
 const
 
-  FileChar:string ='ABCDEFGH';
+  FileChar:string ='abcdefgh';
   RankChar:string ='87654321';
 
 
@@ -32,17 +33,18 @@ type
     A1, B1, C1, D1, E1, F1, G1, H1
   );
 
-
-
+ TSetofSquare=set of TSquare;
+ TSquarelist=array of Tsquare;
 
 
   TSquareIdx=0..63;
 
   TSquare8=array[1..8] of TSquare;
 
+  TSquarevalue=integer;
 
 const
-   cSquarestr :array[0..63] of string=(
+   SquareTostr :array[0..63] of string=(
     'a8','b8', 'c8', 'd8', 'e8', 'f8', 'g8', 'h8',
     'a7','B7', 'c7', 'd7', 'e7', 'f7', 'g7', 'h7',
     'a6','b6', 'c6', 'd6', 'e6', 'f6', 'g6', 'h6',
@@ -52,7 +54,9 @@ const
     'a2','b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2',
     'a1','b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1'
   );
-  _RANK :array[1..8] of
+
+
+   _RANK :array[1..8] of
     Tsquare8=(
     (A1,B1,C1,D1,E1,F1,G1,H1),
     (A2,B2,C2,D2,E2,F2,G2,H2),
@@ -102,38 +106,73 @@ TRank = ( RANK_1, RANK_2, RANK_3, RANK_4, RANK_5, RANK_6, RANK_7, RANK_8 );
 
 TDelta = integer;
 
-
 const
-  _SSW = 17;
-  _SS  = 16;
-  _SSE = 15;
-  _SWW = 10;
-  _SW  = 9;
-  _S   = 8;
-  _SE  = 7;
-  _SEE = 6;
-  _W   = 1;
-  _ZERO= 0;
-  _E   = -1;
-  _NWW = -6;
-  _NW  = -7;
-  _N   = -8;
-  _NE  = -9;
-  _NEE = -10;
-  _NNW = -15;
-  _NN  = -16;
-  _NNE = -17;
+  DELTA_SSW = 17; // a8=0 h1=63
+  DELTA_SS = 16;
+  DELTA_SSE = 15;
+  DELTA_SWW =10;
+  DELTA_SW =9;
+  DELTA_S = 8;
+  DELTA_SE = 7;
+  DELTA_SEE = 6;
+  DELTA_W = 1;
+  DELTA_ZERO = 0;
+  DELTA_E = -1;
+  DELTA_NWW = -6;
+  DELTA_NW = -7;
+  DELTA_N = -8;
+  DELTA_NE = -9;
+  DELTA_NEE = -10;
+  DELTA_NNW = -15;
+  DELTA_NN = -16;
+  DELTA_NNE = -17;
 
 
+operator :=(sq:Tsquare):string;
+//operator +(sq:Tsquare;i :integer):integer;
 
-  operator :=(sq:Tsquare):string;
-  function StrToSquareidx(s:string):Tsquareidx;
 
+function StrToSquareidx(s:string):Tsquareidx;
+  function SquareidxTostr(s:Tsquareidx):string;
+
+  function square(r: TRank; f: TFile): TSquare; inline;
+  function file_of(sq: TSquare): TFile; inline;
+  function rank_of(sq: TSquare): TRank; inline;
 //var RANK1 :TSquare8;
 
 
 implementation
 
+
+function SquareIdxToSquare(sqi:TSquareidx):Tsquare;
+var i :integer;
+begin
+ result:=A8;
+ for i:=0 to sqi-1 do result:=succ(result);
+ result:=result;
+end;
+
+
+
+function square(r: TRank; f: TFile): TSquare; inline;
+begin
+  result := TSquare(cardinal(r) shl 3 + cardinal(f));
+end;
+
+function file_of(sq: TSquare): TFile; inline;
+begin
+  result := TFile(cardinal(sq) and 7);
+end;
+
+function rank_of(sq: TSquare): TRank; inline;
+begin
+  result := TRank(cardinal(sq) shr 3);
+end;
+
+function SquareidxTostr(s:Tsquareidx):string;
+begin
+ result:= Filechar[s and 7+1]+Rankchar[s shr 3 +1];
+end;
 
 function StrToSquareidx(s:string):Tsquareidx;
 begin
@@ -145,7 +184,7 @@ begin
   result:=Filechar[ord(sq) and 7+1]+Rankchar[ord(sq) shr 3 +1] ;// shl 3; //
 end;
 
-end.
 
+end.
 
 

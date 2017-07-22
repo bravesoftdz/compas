@@ -5,7 +5,7 @@ unit uBoard;
 interface
 
 uses
-  Classes, SysUtils,uSquare,uPiece,uvalue,uRights;
+  SysUtils,uSquare,uPiece,uvalue,uvaluelist,uRights,ucolor;
 
 type
    Tboard=packed record
@@ -15,22 +15,35 @@ type
      2:(by_yx    : array[0..7,0..7] of TVALUE);
     end;
 
-procedure FillBoard(var aboard:Tboard; x1, y1, x2, y2: integer; avalue: Tvalue);
-function BoardAsstring(aboard :Tboard): string;
+procedure Board_Clear(var aboard:Tboard);
+procedure Board_Set(var aboard:Tboard;const Args: array of const);
+
+procedure Board_Fill(var aboard:Tboard; x1, y1, x2, y2: integer; avalue: Tvalue);
+function Board_Tostr(aboard :Tboard): string;
 
 procedure Decode_PiecePlacement(pp:Tpieceplacement;var aboard :Tboard);
-procedure Encode_PiecePlacement(aboard :Tboard;var pp:Tpieceplacement);
-
+procedure Encode_PiecePlacement(var pp:Tpieceplacement;aboard :Tboard);
 
 
 implementation
 
-procedure FillBoard(var aboard:Tboard; x1, y1, x2, y2: integer; avalue: Tvalue);
+procedure Board_Set(var aboard:Tboard;const Args: array of const);
+begin
+end;
+
+
+procedure Board_Fill(var aboard:Tboard; x1, y1, x2, y2: integer; avalue: Tvalue);
 var x,y:integer;begin
   for x:=x1 to x2 do for y:=y1 to y2 do aboard.by_yx[y,x]:=avalue;
 end;
 
-function BoardAsstring(aboard :Tboard): string;
+procedure Board_Clear(var aboard: Tboard); begin  board_fill(aboard,0,0,7,7,EMPTY) end;
+
+
+// idea is it to give 2 sets and fill the board with them
+
+
+function Board_Tostr(aboard :Tboard): string;
 var x,y:integer;
 begin
  result:='';
@@ -45,10 +58,9 @@ end;
 procedure Decode_PiecePlacement(pp:Tpieceplacement;var aboard :Tboard);
 
 var ch :char;f,i:integer;
-    Sl :Tstringlist;
     function IsInstr(a,b:string):integer;begin if pos(a,b)>0 then result:=1 else result:=0; end;
 begin
- Fillboard(aboard,0,0,7,7,Empty);
+ board_fill(aboard,0,0,7,7,Empty);
 
   f:=0;i:=1;
    repeat
@@ -56,10 +68,10 @@ begin
      if ch in ['1'..'8'] then  begin f:=f+strtoint(ch);inc(i);continue;end;
      if ch<>'/' then begin aBoard.by_squareidx[f]:=ValuecharToValue(ch);inc(f);end;
      inc(i);
-    until i>length(sl[0]);
+    until i>length(pp);
 
 end;
-procedure Encode_PiecePlacement(aboard :Tboard;var pp:Tpieceplacement);
+procedure Encode_PiecePlacement(var pp:Tpieceplacement;aboard :Tboard);
 var
   Q,i: integer;
   p:char;

@@ -7,6 +7,8 @@ interface
 uses uValue ,uColor ,uPiece ,uBoard;
 
 
+//var Board :Tboard;
+
 implementation
 
 end.

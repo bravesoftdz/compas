@@ -4,7 +4,7 @@ unit uRights;
 
 interface
 
-uses uSquare;
+uses uSquare,ucolor;
 
 const
    cCASTLING='KQkq';
@@ -12,6 +12,7 @@ const
 type
 
 //    TPieceplacement=array[TSquareIDX] of char;
+    TPromotion=integer;
     TCastling =integer;
     Tfullmove =integer;
     Thalfmove =integer;
@@ -23,6 +24,14 @@ type
     function StrToCastling (s:string):TCastling;
     function EnpassantToStr(ep: TEnpassant): string;
     function StrToEnpassant (s:string):TEnpassant;
+
+var
+  ActiveColor:Tcolor;
+  Castling   :Tcastling;
+  fullmove   :Tfullmove;
+  halfmove   :Thalfmove;
+  Enpassant  :Tenpassant;
+  PiecePlacement :TPieceplacement;
 
 implementation
 
@@ -46,7 +55,7 @@ begin
 end;
 function EnpassantToStr(ep: TEnpassant): string;
 begin
- if ep=-1 then result:='-' else result:=cSquarestr[ep];
+ if ep=-1 then result:='-' else result:=SquareTostr[ep];
 
 end;
 function StrToEnpassant(s: string): TEnpassant;

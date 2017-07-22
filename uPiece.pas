@@ -23,7 +23,8 @@ const
   QUEEN =TPIECE(5);
   KING  =TPIECE(6);
 
-  EMPTY =TPIECE(0);
+  EMPTY   =TPIECE(0);
+  INVALID =TPIECE(-1);
 
   // PieceColorChar-> PCCh
   Piece  : array[TVALUE] of integer=(0,PAWN,KNIGHT,BISHOP,ROOK,QUEEN,KING,0,0,PAWN,KNIGHT,BISHOP,ROOK,QUEEN,KING,0);
@@ -33,14 +34,12 @@ const
   'NoPiece','Pawn', 'Knight','Bishop', 'Rook', 'Queen','King','NoPiece','NoPiece'
        ,'Pawn', 'Knight','Bishop', 'Rook', 'Queen','King','NoPiece');
 
+  PIECEVALUE:array[0..15] of int64=(0,-100,-300,-350,-500,-900,-10000,0,0,100,300,350,500,900,10000,0);
 
 function  ValuecharToValue(pc:char):Tvalue;
 
-
 type
   TPieceCount=array[0..15] of TPIECE;
-
-  function FlipColor(Piece:integer):integer;
 
 
 implementation
@@ -50,10 +49,6 @@ begin
   result:=pos(pc,'.pnbrqk..PNBRQK.')-1;
 end;
 
-function FlipColor(Piece:integer):integer;
-begin
-  if (Piece and 8) = 8 then result:=Piece and (15-8) else result:=Piece or 8;
-end;
 
 
 end.

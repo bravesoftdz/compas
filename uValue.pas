@@ -8,6 +8,7 @@ type
 
 TVALUE=0..15; // a value on the board
 
+TSetofValue=set of Tvalue;
 
 const                                        //0123456789
 ValueToChar  : array [TVALUE]  of AnsiChar  = '.pnbrqk..PNBRQK.'; //???
